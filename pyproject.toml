@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=40.0", "setuptools_scm", "wheel"]
+
+[tool.black]
+exclude = '''
+(
+		__pycache__
+	|	^/src/collegial/_version.py
+)
+'''

@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[pipenv]
+allow_prereleases = true
+
+[packages]
+collegial = {editable = true,path = "."}
+
+[dev-packages]
+black = "==19.3b0"
+"flake8" = "*"
+"flake8-bugbear" = "*"
+pre-commit = "*"
+setuptools = ">=40.0"
+mypy = "*"
+twine = "*"
+pytest = "*"
+sphinx = "*"
+aiohttp-theme = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+setup_dev = "sh -c \"pre-commit install\""

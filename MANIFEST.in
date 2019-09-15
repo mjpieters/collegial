@@ -1,0 +1,10 @@
+include LICENSE.md
+include README.md
+include *.toml
+exclude .*
+exclude *.ini
+exclude Pipfile
+graft src/collegial *
+graft docs
+graft tests
+prune docs/_build
